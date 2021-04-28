@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <title>REGISTRATION</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <section class="header__left">
+                <a class="header__logo" href="index.html">
+                    <img width="44" height="38" src="img/logo.png" alt="logo">
+                </a>
+                <img src="img/loupe.png" alt="loupe">
+            </section>
+            <section class="header__right">
+                <nav class="header__menu">
+                    <a href="#">
+                        <img width="32" height="23" src="img/menu.png" alt="menu">
+                    </a>
+                    <a href="registration.html">
+                        <img width="29" height="29" src="img/registration.png" alt="registration">
+                    </a>
+                    <a href="#">
+                        <img width="32" height="29" src="img/basket.png" alt="basket">
+                    </a>
+                </nav>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class="registration__heading">
+            <div class="container regisration__hading__container">
+                <h2 class="regisration__heading__text">REGISTRATION</h2>
+            </div>
+        </section>
+        <section class="container">
+            <form class="form__registration">
+                <div class="form__left">
+                    <h4 class="reg__heading">Your Name</h4>
+                    <label for="first_name"><input class="reg__form" id="first_name" type="text" placeholder="First Name"></label>
+                    <label for="last_name"><input class="reg__form" id="last_name" type="text" placeholder="Last Name"></label>
+                    <div class="gender">
+                        <label for="male"><p class="form__gender"><input id="male" type="radio" value="Male" name="gender" checked> Male</p></label>
+                    <label for="female"><p class="form__gender"><input id="female" type="radio" value="Female" name="gender"> Female</p></label>
+                    </div>
+                    <h4 class="reg__heading">Login details</h4>
+                    <label for="reg__email"><input class="reg__form" id="reg__email" type="email" placeholder="Email"></label>
+                    <label for="reg__password"><input class="reg__form" id="reg__password" type="password" placeholder="Password"></label>
+                    <p class="reg__text">Please use 8 or more characters,
+                        with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                    <button class="registration__btn">JOIN NOW <img width="16" height="10" src="img/white__arrow.png"
+                            alt="arrow"></button>
+
+                </div>
+                <div class="form__right">
+                    <h3 class="form__content__heading">LOYALTY HAS ITS PERKS</h3>
+                    <p class="form__content">Get in on the loyalty program where you can earn points and unlock serious
+                        perks.
+                        Starting with these as soon as you join:</p>
+                    <ul class="form__content__list">
+                        <li>15% off welcome offer</li>
+                        <li>Free shipping, returns and exchanges on all orders</li>
+                        <li>$10 off a purchase on your birthday</li>
+                        <li>Early access to products</li>
+                        <li>Exclusive offers & rewards</li>
+                    </ul>
+                </div>
+            </form>
+        </section>
+        <section class="subscribe">
+            <div class="container subscribe__container">
+                <div class="subscribe__comment">
+                    <img height="96" width="96" class="subscribe__photo" src="img/subscribe photo.png" alt="photo">
+                    <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        a pulvinar purus condimentum“</p>
+                </div>
+                <form class="subscribe__form">
+                    <h2 class="subscribe__heading">SUBSCRIBE<br><span class="subscribe__heading__decor">OUR NEWLETTER
+                            AND PROMOTION</span></h2>
+                    <div class="subscribe__button">
+                        <input class="input__subscribe" type="email" placeholder="Enter Your Email">
+                        <input class="btn__subscribe" type="submit" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__information">
+                <div class="footer__left">
+                    <p class="footer__text">© 2021 Brand All Rights Reserved.</p>
+                </div>
+                <div class="footer__right">
+                    <a href="#"><img height="32" width="32" src="img/facebook.png" alt="icon"></a>
+                    <a href="#"><img height="32" width="32" src="img/insta.png" alt="icon"></a>
+                    <a href="#"><img height="32" width="32" src="img/pinterest.png" alt="icon"></a>
+                    <a href="#"> <img height="32" width="32" src="img/twitter.png" alt="icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
