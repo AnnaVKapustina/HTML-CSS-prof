@@ -1,0 +1,13 @@
+.product__photo__slider {
+    background-color: #F7F7F7;
+    padding: 11px 0 42px 0;
+    @include flex-between;
+    align-items: center;
+    &__arrow {
+        fill: black;
+        background-color: rgba(42, 42, 42, 0.15); 
+        &:hover {
+            fill: $colorMain;
+        }  
+    }
+}

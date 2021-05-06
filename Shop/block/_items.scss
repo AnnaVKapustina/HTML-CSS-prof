@@ -1,0 +1,69 @@
+.items {
+    margin-bottom: 95px;
+    &__container h2 {
+        font-weight: normal;    
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+        margin: 0;
+        text-align: center;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+        text-align: center;
+        margin: 0 auto;     
+    }
+    &__cards {
+        @include flex-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 48px 0 48px 0;
+        &__unit {
+            width: 31%;
+            box-sizing: border-box;
+            background-color: #F8F8F8;
+            height: 580px;
+            &__name {
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 16px;
+                color: #000000;
+                margin: 24px 0 12px 0;
+                padding-left: 16px;
+            }
+            &__specification {
+                max-width: 315px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #5D5D5D;
+                padding-left: 16px;
+            }
+            &__price {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: $colorMain;
+                padding-left: 16px; 
+            }
+        }
+    }
+    &__button__block {
+        @include center;
+    }
+    &__button {
+        padding: 14px 39px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $colorMain;
+        background-color: white;
+        border: 1px solid $colorMain;
+        &:hover {
+            color: white;
+            background-color: $colorMain;
+        }
+    }    
+}
