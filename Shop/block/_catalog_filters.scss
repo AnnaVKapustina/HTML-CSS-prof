@@ -1,0 +1,48 @@
+.container__filters {
+    padding: 51px 0 65px 0;
+ }
+ .filters__right {
+     @include center;
+ }
+ .filters__btn {
+     outline: none;
+     background-color: white;
+     border: none;
+ }
+ .filters__btn:hover {
+     opacity: 0.4;
+ }
+ .heading__filters {
+     font-weight: 600;
+     font-size: 14px;
+     line-height: 17px;
+     color: #000000; 
+ }
+ details {
+     display: block;
+ }
+ details summary::-webkit-details-marker {
+     display: none;
+ }
+ .category__item {
+     text-decoration: none;
+     font-family: 'Lato', sans-serif;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 17px;
+     color: #6F6E6E;
+     padding: 11px;
+ }
+ .filters_menu:active {
+     color: $colorMain;
+ }
+ .filters_menu {
+     font-weight: normal;
+     font-size: 14px;
+     line-height: 17px;
+     color: #6F6E6E;
+     border-left: solid 5px $colorMain;
+     border-bottom: 1px solid #EBEBEB;
+     padding: 11px 0 11px 11px;
+ }
