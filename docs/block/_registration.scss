@@ -1,7 +1,11 @@
-.form__registration {
+.registration__container {
     @include flex-between;
     margin: 64px 0 96px 0;
+}    
+.form__registration {   
     &__left {
+        display: flex;
+        flex-direction: column; 
         width: 360px;
         & h4 {
             font-weight: 300;
@@ -16,13 +20,16 @@
             color: #B1B1B1;
         }
         &__text {
-            margin: 0 0 39px 0;
+            margin: -6px 0 39px 0;
         }
         &__btn {
             padding: 17px 29px 17px 29px;
             background-color: $colorMain;
             color: white;
             border: none;
+            display: flex;
+            gap: 20px;
+            align-items: center;
             &:hover {
                 background-color: #F0485E;
                 cursor: pointer;
@@ -33,10 +40,11 @@
             }
         }
         &__input {
-            padding: 12px 148px 16px 17px;
+            padding: 12px 17px 16px 17px;
             background-color: #FFFFFF;
             border: 1px solid #A4A4A4;
             margin-bottom: 21px;
+            width: 324px;
             &:focus {
                 outline: none;
                 opacity: $hoverOpacity;
@@ -68,7 +76,7 @@
                 list-style-image: url('../img/marker.png');
             }
             & li {
-                padding: 16px;
+                padding: 0 0 16px 23px;
             }
         }
     }

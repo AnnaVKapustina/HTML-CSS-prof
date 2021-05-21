@@ -8,7 +8,8 @@
         font-weight: normal;
         font-size: 24px;
         line-height: 29px;
-        color: $colorMain;  
+        color: $colorMain;
+        width: 50%;  
     }
     &__navigation {
         padding: 20px 0 0 0;
@@ -19,7 +20,7 @@
             font-size: 14px;
             line-height: 17px;
             color: #636363;
-            &__new {
+            &__active {
                 color: $colorMain;
             }
             &:hover {

@@ -1,3 +1,8 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr min-content;
+}
 @import '../block/var';
 @import '../block/mixin';
 .container {
@@ -34,6 +39,7 @@
         max-width: calc(768px - 16px*2);
     }
     .promo {
+        margin-bottom: 20px;
         &__container {
             max-height: 368px;
             background-size: contain;
@@ -91,6 +97,7 @@
         }
         &__form {
             padding: 0;
+            width: 100%;
         }
     }
     .filters {
@@ -111,9 +118,16 @@
             }    
         }
     }
+    .registration__container {
+        display: flex;
+        gap: 20px;
+    }
     .form__registration {
         &__right {
             width: 50%;
+            &__content {
+                margin: 32px 0 22px 0;
+            }
             &__content, &__content__list, h3 {
                 font-size: 16px;
                 line-height: 19px;
@@ -142,24 +156,23 @@
     }    
 }
 
-//mobile 
+//mobile M
 @media (max-width: 767px) {
     .container {
-        max-width: calc(375px - 16px * 2);
+        max-width: calc(375px - 9px*2);
     }
     .header {
-        &__right {
-            margin-right: -40px;
+        &__menu {
+            &__link {
+                display: none;
+            }
+            &__icon__number {
+                display: none;
+            }
         }
-        &__menu__icon__registration {
-            display: none;
-        }
-        &__menu__icon__cart {
-            display: none;
-        }
-        &__menu__icon__number {
-            display: none;
-        }
+    }
+    .overlay__menu__open__btn {
+        margin: 0;
     }
     .promo {
         &__container {
@@ -234,9 +247,8 @@
     }
     .page__heading {
         &__container {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+           @include center;
+           flex-direction: column;
         }
         &__text {
             text-align: center;
@@ -257,14 +269,17 @@
             }
         }
     }
-    .category__filters__btn {
-        &__span {
-            display: none;
-        }
-        &__svg {
-            width: 37px;
-            height: 25px;
-        }
+    .category__filters {
+        &__btn {
+            padding-left: 0;
+            &__span {
+                display: none;
+            }
+            &__svg {
+                width: 37px;
+                height: 25px;
+            } 
+        }    
     }
     .product__information {
         &__text {
@@ -290,12 +305,15 @@
             line-height: 12px;
         }
     }
-    .form__registration {
+    .registration__container {
         flex-direction: column;
         gap: 40px;
-        &__right {
-            width: 100%;
-        }
+    }
+    .form__registration__left__input {
+        width: 320px;
+    }
+    .form__registration__right {
+        width: 100%;
     }
     .cart__block {
         padding: 48px 0 96px 0;
@@ -339,6 +357,9 @@
                     }
                 }
             }
+        }    
+        &__shipping__form__input {
+            width: 354px;
         }
         &__btns {
             margin-top: 30px;
@@ -360,6 +381,89 @@
             width: 294px;
         }
     }           
+}
+
+//mobile S
+@media (max-width: 360px) {
+    .container {
+        max-width: calc(320px - 9px*2);
+    }
+    .items {
+        &__card__unit {
+            width: 100%;
+        }
+    }
+    .advantages {
+        &__block {
+            width: 288px;
+        }
+    }
+    .subscribe {
+        &__input {
+            padding: 13px 20px;
+            width: 160px;
+        }
+        &__btn {
+            padding: 13.5px;
+        }
+        &__heading__decor {
+            font-size: 16px;
+        }
+    }
+    .category__filters {
+        width: 302px;
+        &__btn {
+            padding-left: 0;
+            &__span {
+                display: none;
+            }
+            &__svg {
+                width: 30px;
+                height: 18px;
+            } 
+        }    
+    }
+    .page__pagination__nav {
+        padding: 12px 4px 12px 4px;
+    }
+    .product__information__description {
+        padding: 34px 25px 8px 25px;
+    }
+    .cart__block {
+        &__product__card {
+            width: 302px;
+            &__information__h3 {
+                padding: 10px 0 10px 0;
+            }
+            &__options__quantity {
+                gap: 5px;
+            }
+        }
+        &__btns {
+            justify-content: space-between;
+            width: 302px;
+        }
+        &__btn {
+            padding: 9px 15px 9px 15px;
+        }
+        &__shipping__form__input {
+            width: 296px;
+        }
+        &__price {
+            width: 236px;
+            &__btn {
+                font-size: 11px;
+            }
+        }
+    }
+    .form__registration__left {
+        &__input {
+        width: 266px;
+        }
+        &__text {
+            width: 302px;
+        }
+    }    
 }
 
 

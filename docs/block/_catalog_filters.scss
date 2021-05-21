@@ -1,5 +1,5 @@
 .filters__container {
-    padding: 51px 0 0 0;
+    padding: 51px 0 20px 0;
  }
  .filters__right {
      @include center;
@@ -21,12 +21,13 @@
          &__checkbox {
              display: none;
              &:checked ~ .filters__right__size__drop {
-                 display: block;
+                 display: flex;
+                 flex-direction: column;
+                 gap: 10px;
                  position: absolute;
                  z-index: 1;
                  box-sizing: border-box;
-                 padding-left: 10px;
-                 width: 79px;
+                 padding: 10px 30px 12px 10px;
                  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
                  background-color: white;
              }
@@ -35,10 +36,14 @@
              }
         }
         &__drop__value {
+                display: flex;
+                gap: 10px;
                 font-size: 14px;
                 line-height: 16px;
                 color: #6F6E6E;
-                margin: 10px 0 10px 0;
+                &:hover {
+                    cursor: pointer;
+                }
              }
         &__title {
             font-size: 14px;
@@ -90,6 +95,9 @@
             line-height: 17px;
             color: #6F6E6E;
             padding: 34px;
+            &:hover {
+                color: $colorMain;
+            }
         }
      }
      &:hover {

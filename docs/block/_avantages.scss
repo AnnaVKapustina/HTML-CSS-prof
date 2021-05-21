@@ -3,7 +3,11 @@
     &__container {
         padding: 93px 0 94px 0;
         @include flex-between;
-        align-items: baseline; 
+        align-items: baseline;
+        gap: 30px; 
+    }
+    &__block {
+        width: 30%;
     }
     &__img {
         display: block;

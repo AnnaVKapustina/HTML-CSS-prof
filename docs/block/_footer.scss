@@ -1,6 +1,8 @@
 .footer {
     background-color: #222224;
+    &__container {
     padding: 24px 0 24px 0;
+    }
     &__information {
         @include flex-between;
     }
